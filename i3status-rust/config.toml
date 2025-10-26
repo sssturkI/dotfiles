@@ -1,0 +1,83 @@
+# Чёрно-белая тема с цветами
+
+
+[[block]]
+block = "cpu"
+format = " $utilization"
+interval = 1
+format_alt = " $utilization Max: $max_utilization"
+[block.theme_overrides]
+    idle_bg = "#000000"
+    idle_fg = "#ffffff"
+    info_bg = "#000000" 
+    info_fg = "#00ff00"
+    good_bg = "#000000"
+    good_fg = "#00ff00"
+    warning_bg = "#000000"
+    warning_fg = "#ffff00"
+    critical_bg = "#000000"
+    critical_fg = "#ff0000"
+
+[[block]]
+block = "memory"
+format = " $mem_used_percents"
+interval = 2
+[block.theme_overrides]
+    idle_bg = "#000000"
+    idle_fg = "#ffffff"
+    info_bg = "#000000"
+    info_fg = "#00ff00" 
+    warning_bg = "#000000"
+    warning_fg = "#ffff00"
+    critical_bg = "#000000"
+    critical_fg = "#ff0000"
+
+[[block]]
+block = "battery"
+device = "BAT0"
+format = " $percentage"
+interval = 10
+[block.theme_overrides]
+    idle_bg = "#000000"
+    idle_fg = "#ffffff"
+    info_bg = "#000000"
+    info_fg = "#00ff00"
+    warning_bg = "#000000"
+    warning_fg = "#ffff00"
+    critical_bg = "#ff0000"
+    critical_fg = "#ffffff"
+
+[[block]]
+block = "battery"
+device = "BAT1"
+format = " $percentage"
+interval = 10
+[block.theme_overrides]
+    idle_bg = "#000000"
+    idle_fg = "#ffffff"
+    info_bg = "#000000"
+    info_fg = "#00ff00"
+    warning_bg = "#000000"
+    warning_fg = "#ffff00"
+    critical_bg = "#ff0000"
+    critical_fg = "#ffffff"
+
+[[block]]
+block = "net"
+format = " $speed_down.eng(prefix:K)|$speed_up.eng(prefix:K)"
+interval = 2
+[block.theme_overrides]
+    idle_bg = "#000000"
+    idle_fg = "#ffffff"
+    info_bg = "#000000"
+    info_fg = "#00ffff"
+    warning_bg = "#000000"
+    warning_fg = "#ffff00"
+
+[[block]]
+block = "time"
+format = " $timestamp.datetime(f:'%H:%M')"
+interval = 1
+[block.theme_overrides]
+    idle_bg = "#000000"
+    idle_fg = "#ffffff"

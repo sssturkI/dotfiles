@@ -1,0 +1,36 @@
+# Индикатор всегда виден
+indicator-idle-visible
+
+# Использовать текущий экран как фон  
+screenshots
+
+# Блюр экрана
+effect-blur=10x5
+
+# Текст ВНУТРИ круга
+text=Hello again
+text-color=ffffff
+text-size=16
+
+# Дата и время ВНУТРИ круга
+clock
+timestr=%H:%M
+datestr=%d.%m.%Y
+time-color=ffffff
+date-color=ffffff
+
+# Индикатор ввода
+indicator
+indicator-radius=120
+indicator-thickness=12
+ring-color=ffffff
+inside-color=00000088
+
+# Цвета при ошибке
+ring-wrong-color=ff0000
+inside-wrong-color=00000088
+
+# Дополнительные настройки
+ignore-empty-password
+show-failed-attempts
+fade-in=0.3
